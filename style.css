@@ -1,0 +1,25 @@
+.clicked {
+    background-color: #4CAF50;
+}
+
+.valid {
+    border: 2px solid green;
+}
+
+.invalid {
+    border: 2px solid red;
+}
+
+.tab-content {
+    display: none;
+}
+
+.active-tab {
+    display: block;
+}
+
+#emailFeedback,
+#passwordFeedback {
+    color: red;
+    font-size: 0.9em;
+}

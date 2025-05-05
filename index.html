@@ -1,0 +1,33 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Interactive Web Page</h1>  <!-- Button Click & Hover --><button id="clickBtn" class="hover-button animated-button">Click Me</button> <button id="secretBtn">(Try to Double Click Me)</button>
+
+  <!-- Image Gallery -->  <div id="gallery">
+    <img src="https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image">
+    <img src="https://images.pexels.com/photos/11558042/pexels-photo-11558042.jpeg?auto=compress&cs=tinysrgb&w=400" alt="City_Image">
+    <img src="https://images.pexels.com/photos/3448835/pexels-photo-3448835.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cat_Image">
+  </div>  <!-- Tabs -->  <div>
+    <button onclick="showTab('tab1')">Tab 1</button>
+    <button onclick="showTab('tab2')">Tab 2</button>
+  </div>
+  <div id="tab1" class="tab-content active-tab">
+    <p>This is Tab 1 content.</p>
+  </div>
+  <div id="tab2" class="tab-content">
+    <p>This is Tab 2 content.</p>
+  </div>  <!-- Form Validation -->  <form id="sampleForm">
+    <label>Username: <input type="text" id="username" name="username" placeholder="Enter your username" required></label><br><br>
+    <label>Email: <input type="email" id="email" placeholder="email@example.com" required></label>
+    <div id="emailFeedback" class="feedback"></div><br>
+    <label for>Password: <input type="password" minlength="8" maxlength="14" id="password" placeholder="input password" required></label>
+    <label>ConfirmPassword: <input type="confirm password" placeholder="Confirm Your Password"></div><br>
+    <div id="passwordFeedback" class="feedback"></div><br>
+    <button type="submit">Submit</button>
+  </form>  <script src="script.js"></script></body>
+</html>
