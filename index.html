@@ -30,4 +30,33 @@
     <div id="passwordFeedback" class="feedback"></div><br>
     <button type="submit">Submit</button>
   </form>  <script src="script.js"></script></body>
+  
+   <title>Real-time Feedback</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+    }
+    #feedback {
+      margin-top: 10px;
+      color: gray;
+    }
+  </style>
+</head>
+<body>
+
+  <label for="inputText">Type something:</label><br>
+  <input type="text" id="inputText" placeholder="Start typing...">
+  <div id="feedback">Characters: 0</div>
+
+  <script>
+    const input = document.getElementById('inputText');
+    const feedback = document.getElementById('feedback');
+
+    input.addEventListener('input', () => {
+      const charCount = input.value.length;
+      feedback.textContent = `Characters: ${charCount}`;
+    });
+  </script>
+
 </html>
